@@ -75,7 +75,7 @@ def main():
             case "6":
                 esvaziar_lista(lista)
             case "7":
-                print("Saindo do programa...")
+                print("A sair do programa...")
                 break
             case _:
                 print("Opção inválida. Tente novamente.")
