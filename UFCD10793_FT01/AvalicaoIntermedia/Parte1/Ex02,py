@@ -1,0 +1,12 @@
+'''Peça dois números ao utilizador e trate a divisão por zero.'''
+
+while True:
+    try:
+        a = int(input("\nDigite o numerador: "))
+        b = int(input("Digite o denominador: "))
+        print(f"\nResultado da divisão: {round(a/b,3)}\n")
+        break
+    except ZeroDivisionError:
+        print("Erro: Não é possível dividir por zero.")
+    except ValueError:
+        print("Erro: Apenas números inteiros são permitidos.")
