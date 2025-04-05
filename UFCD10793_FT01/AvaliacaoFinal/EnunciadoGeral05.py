@@ -13,12 +13,17 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Configurações de estilo
-sns.set_style("whitegrid")
-plt.rcParams["figure.figsize"] = (10, 6)
+plt.style.use('ggplot')
+plt.rcParams["figure.figsize"] = (12, 6)
 
 # Carregar dados do arquivo Excel
 df = pd.read_excel("House_Prices_Dataset.xls", engine='openpyxl')  # Se for .xlsx, pode usar 'openpyxl' ou 'xlrd'
 df.head()
+
+# Carregando o dataset
+file_path = 'dp2015-13_Dataset.xls'
+df = pd.read_excel(file_path, sheet_name='CCC_Flats_Features_plus_Eurosta')
+
 
 # Mostrar % de valores ausentes por coluna
 missing_data = df.isnull().sum() / len(df) * 100
