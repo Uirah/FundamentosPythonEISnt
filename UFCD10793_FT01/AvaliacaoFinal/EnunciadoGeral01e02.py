@@ -2,7 +2,6 @@
 três variáveis inteiras.
 """
 
-
 dates = [
     "01/01/2020",
     "15/03/2022",
@@ -46,7 +45,6 @@ def contagem_vogais(palavra):
 def main():
     lista = []
 
-   
     print("\n\033[1;31;47m***** Contagem de Vogais *****\033[m\n")
 
     palavra = input("Qual a palavra a ser testada: ")
